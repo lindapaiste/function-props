@@ -1,0 +1,45 @@
+{
+  "name": "@lindapaiste/function-props",
+  "version": "1.0.0",
+  "description": "type definitions and parsing utils for allowing a function or a React component to accept a prop which may be either a value or a function which returns a value",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindapaiste/function-props.git"
+  },
+  "homepage": "https://github.com/lindapaiste/function-props",
+  "bugs": {
+    "url": "https://github.com/lindapaiste/function-props/issues"
+  },
+  "keywords": [
+    "resolve",
+	"props"
+  ],
+  "author": "Linda Paiste",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "jest": "^26.3.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {},
+  "files": [
+    "lib/**/*"
+  ]
+}

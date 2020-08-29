@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "downlevelIteration": false,
+    "declaration": true,
+    "strict": true,
+    "outDir": "./lib"
+  },
+  "lib": ["es2019", "esnext"],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "__tests__"
+  ]
+}
